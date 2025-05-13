@@ -4,7 +4,6 @@ import { Mail, Github, Linkedin } from 'lucide-react';
 const SocialIcons = ({  githubUrl = "#", linkedinUrl = "#" }) => {
   return (
     <div className="flex items-center gap-4">
-      </a>
       <a 
         href={githubUrl} 
         target="_blank" 
