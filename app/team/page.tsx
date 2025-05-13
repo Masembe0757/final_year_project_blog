@@ -1,7 +1,8 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import Image from "next/image"
-import { Mail, Linkedin, Github } from "lucide-react"
+import SocialIcons from "./SocialIcons"
+import { Linkedin } from 'lucide-react';
 
 const teamMembers = [
   {
@@ -11,6 +12,9 @@ const teamMembers = [
     role: "Research Team Member",
     specialization: "AI Implementation",
     image: "/aparo.jpg?height=400&width=400",
+    email:"ceciliaheavens256@gmail.com",
+    GitHub : "https://github.com/APAROCECILIA",
+    Linkedin: "https://www.linkedin.com/in/aparo-cecilia-8710bb254?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
   },
   {
     name: "Byansi Anthony",
@@ -18,7 +22,10 @@ const teamMembers = [
     registrationNumber: "21/U/0006",
     role: "Research Team Member",
     specialization: "Game Development",
-    image: "/placeholder.svg?height=400&width=400",
+    image: "/byansi.jpeg?height=400&width=400",
+    GitHub : "https://github.com/AnthonyByansi",
+    email:"byansianthony@gmail.com",
+    Linkedin: "https://www.linkedin.com/in/anthony-byansi-7a027222a/"
   },
   {
     name: "Masembe Sendi Joseph",
@@ -27,6 +34,9 @@ const teamMembers = [
     role: "Research Team Member",
     specialization: "Data Analysis",
     image: "/sendi.jpeg?height=400&width=400",
+    GitHub : "https://github.com/Masembe0757",
+    email:"sendyj886@gmail.com",
+    Linkedin: "https://www.linkedin.com/in/sendi-joseph-480522254?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
   },
   {
     name: "Ochieng Devote Boniface",
@@ -35,6 +45,9 @@ const teamMembers = [
     role: "Research Team Member",
     specialization: "System Architecture",
     image: "/placeholder.svg?height=400&width=400",
+    email:"ochiengdevote@gmail.com",
+    GitHub : "https://github.com/Boniface-devote",
+    Linkedin: "www.linkedin.com/in/devote-boniface-69643b254"
   },
 ]
 
@@ -86,13 +99,13 @@ export default function TeamPage() {
                   </Badge>
                   <div className="space-y-1 text-sm text-muted-foreground">
                     <p>Student No: {member.studentNumber}</p>
+                    <p>Email: {member.email}</p>
                     <p>Reg No: {member.registrationNumber}</p>
                   </div>
-                  <div className="flex gap-2 mt-4">
-                    <Mail className="h-4 w-4 text-muted-foreground hover:text-primary cursor-pointer" />
-                    <Github className="h-4 w-4 text-muted-foreground hover:text-primary cursor-pointer" />
-                    <Linkedin className="h-4 w-4 text-muted-foreground hover:text-primary cursor-pointer" />
-                  </div>
+                  <SocialIcons 
+                    githubUrl={member.GitHub}
+                    linkedinUrl={member.Linkedin}
+                  />
                 </CardContent>
               </Card>
             ))}
