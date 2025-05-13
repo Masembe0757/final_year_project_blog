@@ -84,7 +84,7 @@ export default function TeamPage() {
           {/* Team Members */}
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4 mb-16">
             {teamMembers.map((member) => (
-              <Card key={member.studentNumber} className="overflow-hidden hover:shadow-lg transition-shadow">
+              <Card key={member.studentNumber} className="overflow-hidden hover:shadow-lg transition-shadow h-auto">
                 <Image
                   src={member.image || "/placeholder.svg"}
                   alt={member.name}
@@ -92,17 +92,17 @@ export default function TeamPage() {
                   height={400}
                   className="w-full h-48 object-cover"
                 />
-                <CardContent className="pt-6">
+                <CardContent className="pt-6 pb-6">
                   <h3 className="text-xl font-bold mb-2">{member.name}</h3>
                   <Badge variant="secondary" className="mb-3">
                     {member.specialization}
                   </Badge>
-                  <div className="space-y-1 text-sm text-muted-foreground">
+                  <div className="space-y-2 text-sm text-muted-foreground">
                     <p>Student No: {member.studentNumber}</p>
-                    <p>Email: {member.email}</p>
+                    <p className="break-words">Email: {member.email}</p>
                     <p>Reg No: {member.registrationNumber}</p>
                   </div>
-                  <SocialIcons 
+                  <SocialIcons
                     githubUrl={member.GitHub}
                     linkedinUrl={member.Linkedin}
                   />
