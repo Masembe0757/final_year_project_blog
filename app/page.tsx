@@ -122,7 +122,16 @@ export default function Home() {
                   <div className="space-y-2">
                     <h4 className="font-semibold">Gamification Elements</h4>
                     <p className="text-muted-foreground">
-                     Scores to maintain engagement.
+                     Scores to maintain engagement such as penalties for poor driving and awards for safe driving promotes a safe driving culture.
+                    </p>
+                    <p className="text-muted-foreground">
+                     Quizes to Test knowledge retention for road signs and rules.
+                    </p>
+                  </div>
+                  <div className="space-y-2">
+                    <h4 className="font-semibold">Voice interaction</h4>
+                    <p className="text-muted-foreground">
+                    Voice feedback plays a crucial role in the safety pilot system by delivering real-time, hands-free guidance to the learner. It alerts drivers to traffic violations, suggests safe actions, and reinforces road rules, enhancing focus and safety during training.
                     </p>
                     <p className="text-muted-foreground">
                      Quizes to Test knowledge retention for road signs and rules.
@@ -155,19 +164,14 @@ export default function Home() {
                   <div className="space-y-2">
                     <h4 className="font-semibold">Unreal Engine</h4>
                     <p className="text-muted-foreground">
-                      Advanced 3D simulation capabilities for realistic traffic scenarios.
+                    Unreal Engine was used in the safety pilot system to create a high-fidelity simulation environment that mimicked real-world driving scenarios. It served the purpose of building a realistic and immersive “game-like” interface where the learning AI car could be trained and tested under various traffic conditions. By integrating Gemini services with Unreal Engine, the system could simulate dynamic environments like changing weather, traffic signals and road signs, allowing the AI to receive camera feedback, learn traffic rules, and respond safely in a controlled virtual setting before being applied on real roads.
                     </p>
                   </div>
                   <div className="space-y-2">
-                    <h4 className="font-semibold">Azure AI Services</h4>
+                    <h4 className="font-semibold">Gemini Services</h4>
                     <p className="text-muted-foreground">
-                      Bot Services for conversational interactions and Speech Services for natural voice communication.
-                    </p>
-                  </div>
-                  <div className="space-y-2">
-                    <h4 className="font-semibold">Machine Learning</h4>
-                    <p className="text-muted-foreground">
-                      Adaptive learning algorithms to personalize the educational experience.
+                    In the safety pilot system, Gemini services served as the intelligent backbone of the “game,” where the learning AI car interacted with real-world driving scenarios. Their purpose was to analyze camera feedback in real time, enforce traffic rules, detect hazards, and provide corrective suggestions to the learner driver. Acting like a smart co-pilot, Gemini services helped simulate a responsive and safe driving environment, turning each driving session into an interactive learning experience focused on safety, awareness, and rule compliance.
+
                     </p>
                   </div>
                 </div>
