@@ -1,12 +1,67 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { ChevronRight, BookOpen, Target, BarChart, Lightbulb } from "lucide-react"
+import { ChevronRight, BookOpen, Target, BarChart, Lightbulb, ArrowUp, ArrowDown } from "lucide-react"
 import Link from "next/link"
+import { useEffect, useState } from "react"
 
 export default function Home() {
+  const [showScrollButtons, setShowScrollButtons] = useState(false);
+
+  useEffect(() => {
+    // Show scroll buttons after scrolling down a bit
+    const handleScroll = () => {
+      if (window.scrollY > 300) {
+        setShowScrollButtons(true);
+      } else {
+        setShowScrollButtons(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
+
+  const scrollToBottom = () => {
+    window.scrollTo({
+      top: document.documentElement.scrollHeight,
+      behavior: "smooth"
+    });
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-background to-muted">
+      {/* Scroll Buttons */}
+      {showScrollButtons && (
+        <div className="fixed right-4 bottom-4 flex flex-col gap-2 z-50">
+          <Button 
+            onClick={scrollToTop} 
+            variant="secondary" 
+            size="icon" 
+            className="rounded-full shadow-md"
+            aria-label="Go to top"
+          >
+            <ArrowUp className="h-4 w-4" />
+          </Button>
+          <Button 
+            onClick={scrollToBottom} 
+            variant="secondary" 
+            size="icon" 
+            className="rounded-full shadow-md"
+            aria-label="Go to bottom"
+          >
+            <ArrowDown className="h-4 w-4" />
+          </Button>
+        </div>
+      )}
+
       {/* Hero Section */}
       <section className="container mx-auto px-4 py-16 md:py-24">
         <div className="flex max-w-[64rem] mx-auto flex-col items-center gap-4 text-center">
@@ -164,13 +219,13 @@ export default function Home() {
                   <div className="space-y-2">
                     <h4 className="font-semibold">Unreal Engine</h4>
                     <p className="text-muted-foreground">
-                    Unreal Engine was used in the safety pilot system to create a high-fidelity simulation environment that mimicked real-world driving scenarios. It served the purpose of building a realistic and immersive “game-like” interface where the learning AI car could be trained and tested under various traffic conditions. By integrating Gemini services with Unreal Engine, the system could simulate dynamic environments like changing weather, traffic signals and road signs, allowing the AI to receive camera feedback, learn traffic rules, and respond safely in a controlled virtual setting before being applied on real roads.
+                    Unreal Engine was used in the safety pilot system to create a high-fidelity simulation environment that mimicked real-world driving scenarios. It served the purpose of building a realistic and immersive "game-like" interface where the learning AI car could be trained and tested under various traffic conditions. By integrating Gemini services with Unreal Engine, the system could simulate dynamic environments like changing weather, traffic signals and road signs, allowing the AI to receive camera feedback, learn traffic rules, and respond safely in a controlled virtual setting before being applied on real roads.
                     </p>
                   </div>
                   <div className="space-y-2">
                     <h4 className="font-semibold">Gemini Services</h4>
                     <p className="text-muted-foreground">
-                    In the safety pilot system, Gemini services served as the intelligent backbone of the “game,” where the learning AI car interacted with real-world driving scenarios. Their purpose was to analyze camera feedback in real time, enforce traffic rules, detect hazards, and provide corrective suggestions to the learner driver. Acting like a smart co-pilot, Gemini services helped simulate a responsive and safe driving environment, turning each driving session into an interactive learning experience focused on safety, awareness, and rule compliance.
+                    In the safety pilot system, Gemini services served as the intelligent backbone of the "game," where the learning AI car interacted with real-world driving scenarios. Their purpose was to analyze camera feedback in real time, enforce traffic rules, detect hazards, and provide corrective suggestions to the learner driver. Acting like a smart co-pilot, Gemini services helped simulate a responsive and safe driving environment, turning each driving session into an interactive learning experience focused on safety, awareness, and rule compliance.
 
                     </p>
                   </div>
@@ -270,4 +325,3 @@ export default function Home() {
     </div>
   )
 }
-
