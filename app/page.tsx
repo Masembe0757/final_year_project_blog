@@ -134,7 +134,7 @@ export default function Home() {
                     Voice feedback plays a crucial role in the safety pilot system by delivering real-time, hands-free guidance to the learner. It alerts drivers to traffic violations, suggests safe actions, and reinforces road rules, enhancing focus and safety during training.
                     </p>
                     <p className="text-muted-foreground">
-                     Quizes to Test knowledge retention for road signs and rules.
+                     Quizes to test knowledge retention for road signs and rules.
                     </p>
                   </div>
                   <div className="space-y-2">
@@ -174,6 +174,24 @@ export default function Home() {
 
                     </p>
                   </div>
+
+
+                  <div className="space-y-2">
+                    <h4 className="font-semibold">C programming</h4>
+                    <p className="text-muted-foreground">
+                    C programming was used in the safety pilot system to develop the core functionalities of the driving simulation. It played a crucial role in creating the underlying algorithms that governed the AI car's behavior, including its response to traffic signals, road signs, and other vehicles. By leveraging C's efficiency and performance capabilities, the system could process real-time data from the simulation environment, ensuring smooth interactions and accurate feedback for the learner driver. This programming language was essential for building a robust and responsive driving experience within the Unreal Engine framework.
+                    </p>
+                  </div>
+
+
+                  <div className="space-y-2">
+                    <h4 className="font-semibold">React</h4>
+                    <p className="text-muted-foreground">
+                    React was used in the safety pilot system to develop the user interface (UI) of the application. It enabled the creation of dynamic and interactive components that allowed users to engage with the driving simulation effectively. By utilizing React's component-based architecture, we built reusable UI elements, manage state efficiently, and ensure a smooth user experience. This technology facilitated real-time updates and feedback within the application, enhancing the overall usability and accessibility of the safety pilot system for learners and instructors alike.
+                    </p>
+                  </div>
+
+
                 </div>
               </CardContent>
             </Card>
