@@ -109,7 +109,7 @@ export default function Home() {
                   <div className="space-y-2">
                     <h4 className="font-semibold">AI-Powered Learning</h4>
                     <p className="text-muted-foreground">
-                      Personalized guidance and real-time feedback using Azure AI services, adapting to each user's
+                      Driving Ai and near real-time feedback using Gemini services, adapting to each user's
                       progress.
                     </p>
                   </div>
@@ -122,7 +122,25 @@ export default function Home() {
                   <div className="space-y-2">
                     <h4 className="font-semibold">Gamification Elements</h4>
                     <p className="text-muted-foreground">
-                      Achievement systems, progress tracking, and rewards to maintain engagement.
+                     Scores to maintain engagement.
+                    </p>
+                    <p className="text-muted-foreground">
+                     Quizes to Test knowledge retention for road signs and rules.
+                    </p>
+                  </div>
+                  <div className="space-y-2">
+                    <h4 className="font-semibold">Several Driving lessons</h4>
+                    <p className="text-muted-foreground">
+                     Basic controls.
+                    </p>
+                    <p className="text-muted-foreground">
+                     Rainy weather.
+                    </p>
+                    <p className="text-muted-foreground">
+                     Parking and reversing.
+                    </p>
+                    <p className="text-muted-foreground">
+                     Round about and more...
                     </p>
                   </div>
                 </div>
