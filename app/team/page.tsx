@@ -9,9 +9,9 @@ const teamMembers = [
     name: "Aparo Cecilia",
     studentNumber: "2100705605",
     registrationNumber: "21/U/05605/EVE",
-    role: "Project management",
-    specialization: "AI Implementation",
-    image: "/aparo.jpg?height=400&width=400",
+    role: "Research Team Member",
+    specialization: "Project Management",
+    image: "/aparo.jpg?height=600&width=400",
     email:"ceciliaheavens256@gmail.com",
     GitHub : "https://github.com/APAROCECILIA",
     Linkedin: "https://www.linkedin.com/in/aparo-cecilia-8710bb254?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
@@ -22,7 +22,7 @@ const teamMembers = [
     registrationNumber: "21/U/0006",
     role: "Research Team Member",
     specialization: "API Implementation",
-    image: "/byansi.jpeg?height=400&width=400",
+    image: "/byansi.jpeg?height=600&width=400",
     GitHub : "https://github.com/AnthonyByansi",
     email:"byansianthony@gmail.com",
     Linkedin: "https://www.linkedin.com/in/anthony-byansi-7a027222a/"
@@ -33,7 +33,7 @@ const teamMembers = [
     registrationNumber: "21/U/17978/EVE",
     role: "Research Team Member",
     specialization: "Backend Development",
-    image: "/sendi.jpeg?height=400&width=400",
+    image: "/sendi.jpeg?height=600&width=400",
     GitHub : "https://github.com/Masembe0757",
     email:"sendyj886@gmail.com",
     Linkedin: "https://www.linkedin.com/in/sendi-joseph-480522254?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
@@ -44,7 +44,7 @@ const teamMembers = [
     registrationNumber: "21/U/06323/EVE",
     role: "Research Team Member",
     specialization: "Game development",
-    image: "/placeholder.svg?height=400&width=400",
+    image: "/placeholder.svg?height=600&width=400",
     email:"ochiengdevote@gmail.com",
     GitHub : "https://github.com/Boniface-devote",
     Linkedin: "www.linkedin.com/in/devote-boniface-69643b254"
