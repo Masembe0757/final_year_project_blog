@@ -1,3 +1,4 @@
+"use client"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
@@ -40,26 +41,33 @@ export default function Home() {
     <div className="min-h-screen bg-gradient-to-b from-background to-muted">
       {/* Scroll Buttons */}
       {showScrollButtons && (
-        <div className="fixed right-4 bottom-4 flex flex-col gap-2 z-50">
-          <Button 
-            onClick={scrollToTop} 
-            variant="secondary" 
-            size="icon" 
-            className="rounded-full shadow-md"
-            aria-label="Go to top"
-          >
-            <ArrowUp className="h-4 w-4" />
-          </Button>
-          <Button 
-            onClick={scrollToBottom} 
-            variant="secondary" 
-            size="icon" 
-            className="rounded-full shadow-md"
-            aria-label="Go to bottom"
-          >
-            <ArrowDown className="h-4 w-4" />
-          </Button>
-        </div>
+        <>
+          {/* "Go to Bottom" Button - Top Left */}
+          <div className="fixed left-4 top-4 z-50">
+            <Button 
+              onClick={scrollToBottom} 
+              variant="secondary" 
+              size="icon" 
+              className="rounded-full shadow-md"
+              aria-label="Go to bottom"
+            >
+              <ArrowDown className="h-4 w-4" />
+            </Button>
+          </div>
+
+          {/* "Go to Top" Button - Bottom Right */}
+          <div className="fixed right-4 bottom-4 z-50">
+            <Button 
+              onClick={scrollToTop} 
+              variant="secondary" 
+              size="icon" 
+              className="rounded-full shadow-md"
+              aria-label="Go to top"
+            >
+              <ArrowUp className="h-4 w-4" />
+            </Button>
+          </div>
+        </>
       )}
 
       {/* Hero Section */}
