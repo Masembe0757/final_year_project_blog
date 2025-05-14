@@ -122,7 +122,7 @@ export default function Home() {
                   <div className="space-y-2">
                     <h4 className="font-semibold">Gamification Elements</h4>
                     <p className="text-muted-foreground">
-                     Scores to maintain engagement such as penalties for poor driving and awards for safe driving promotes a safe driving culture.
+                     Scores to maintain engagement such as penalties for poor driving and awards for safe driving that promote a safe driving culture.
                     </p>
                     <p className="text-muted-foreground">
                      Quizes to Test knowledge retention for road signs and rules.
