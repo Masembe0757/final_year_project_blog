@@ -2,7 +2,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import Image from "next/image"
 import SocialIcons from "./SocialIcons"
-import { Linkedin } from 'lucide-react';
+
 
 const teamMembers = [
   {
