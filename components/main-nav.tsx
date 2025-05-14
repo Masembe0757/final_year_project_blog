@@ -6,7 +6,7 @@ export function MainNav() {
       <div className="container flex h-14 items-center">
         <div className="flex w-full justify-between items-center">
           <Link href="/" className="flex items-center space-x-2">
-            <span className="font-bold">Safety Pilot Research</span>
+            <span className="font-bold">Safety Pilot</span>
           </Link>
           <nav className="flex items-center space-x-6 text-sm font-medium">
             <Link href="/">Project</Link>
